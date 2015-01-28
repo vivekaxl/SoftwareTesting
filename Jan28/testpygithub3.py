@@ -7,7 +7,7 @@ def d2s(x):
   temp =time.mktime(time.strptime(str(x), "%Y-%m-%d %H:%M:%S"))
   return (time.time() - temp)/(3600*24)
 
-auth = dict(login='vivekaxl', password='ramwreacked9')
+auth = dict(login='vivekaxl', password='passwd')
 gh = Github(**auth)
 
 octocat_issues = gh.issues.list_by_repo('pypa','pip',state="closed")
